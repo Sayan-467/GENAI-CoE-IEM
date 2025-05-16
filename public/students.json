@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "name": "Atreyee Das",
+    "bio": "I am a second-year B.Tech CSE student at the Institute of Engineering and Management (IEM), Kolkata, with a strong passion for Artificial Intelligence, Machine Learning, and data analysis. Skilled in Python, Java, C, and MySQL, I actively pursue AI-driven projects, complemented by certifications. My goal is to merge logic with creativity to develop impactful, intelligent solutions that make a difference.",
+    "linkedin": "https://www.linkedin.com/in/atreyee-das-5a2137284/",
+    "image": "https://drive.google.com/uc?export=view&id=1tmncLNGLZKXOIlnUhZBFuqjr11LjSDPm",
+    "areaOfInterest": "Leveraging Machine Learning models, Data Analysis, AI integration"
+  },
+  {
+    "id": 2,
+    "name": "Sumit Kumar Das",
+    "bio": "Passionate about building intelligent systems that can learn from data and support decision-making. Interested in applications of machine learning, predictive analytics, and AI-driven solutions in healthcare, finance, and customer experience domains.",
+    "linkedin": "https://www.linkedin.com/in/sumitkumardas-ai/",
+    "image": "https://drive.google.com/uc?export=view&id=1DGdPZlWuqd5orNq9FAue8sqf-XnMoc1N",
+    "areaOfInterest": "Artificial Intelligence & Data Science, Full Stack Development, Cyber Security"
+  },
+  {
+    "id": 3,
+    "name": "Raunak Mishra",
+    "bio": "I am Raunak Mishra, currently pursuing a B.Tech in Electronics and Communication Engineering. I have a strong enthusiasm for emerging technologies, particularly in the fields of Artificial Intelligence, Machine Learning, Robotics, and VLSI-Embedded Systems. My academic and project-based experiences reflect a multidisciplinary approach, with hands-on work in developing web applications, client-server-based platforms, and foundational machine learning models. Additionally, I have explored the growing domain of Agentic AI through practical projects, further strengthening my capabilities in building intelligent and interactive systems. I am continually driven by a passion for innovation and a desire to create impactful tech solutions.",
+    "linkedin": "https://www.linkedin.com/in/raunakmishra725/",
+    "image": "https://drive.google.com/uc?export=view&id=1lBy5ey6fCwXnXDTjVzoNf_S8AWGpM86Z",
+    "areaOfInterest": "AI, ML, Web Dev, Low-Level Coding"
+  },
+  {
+    "id": 4,
+    "name": "Aryan Sengupta ",
+    "bio": "I'm someone who loves diving into all things AI,especially Agentic AI, Gen AI, and automation. Big fan of building cool stuff with web dev and cloud computing too. Always experimenting, learning, and finding smarter ways to get things done with tech.\n",
+    "linkedin": "https://www.linkedin.com/in/aryan-sengupta-685a32270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    "image": "https://drive.google.com/uc?export=view&id=1haFKaMvRoghihRDnQtWpKdsfVm59gpXq",
+    "areaOfInterest": "Gen AI and Agentic AI [SDLC]"
+  },
+  {
+    "id": 5,
+    "name": "Syed Sayan",
+    "bio": "Myself Syed Sayan, an aspiring Software Engineer, currently pursuing my B. Tech from IEM in CSE(AI). Truly interested in problem solving (DSA) & competitive coding in C++, familiar with C, Java, Python and passionate in Web Development along with fluent knowledge in HTML, CSS, JS, Node JS, Express JS, React JS, MongoDB, Next JS.",
+    "linkedin": "https://www.linkedin.com/in/syed-sayan-8a1a5228a/",
+    "image": "https://drive.google.com/uc?export=view&id=1bTEDcl8bGZNrvFcQbI3OQvLv6rdaKpxu",
+    "areaOfInterest": "SDE, Web Dev"
+  },
+  {
+    "id": 6,
+    "name": "Ahana Majumdar ",
+    "bio": "\nHey there! I'm Ahana, part-time student, full-time coding enthusiast (and occasional bug detective). I get way too excited about writing clean code and figuring out why things don\u2019t work before they finally do. I love learning new tech stuff, asking way too many questions, and diving headfirst into anything that sounds remotely like a challenge. Coffee, code, and curiosity pretty much power my days!:)\n",
+    "linkedin": "https://www.linkedin.com/in/ahana-majumdar-21795328a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    "image": "https://drive.google.com/uc?export=view&id=1HSphZzlqkK98e2QvrbsEbOItNNt25F25",
+    "areaOfInterest": "Software development and data analytics "
+  },
+  {
+    "id": 7,
+    "name": "Srijan Roy ",
+    "bio": "I am a passionate Computer Science & Engineering student at IEM, Kolkata, with a keen interest in Artificial Intelligence and Machine Learning development. Eager to explore the realms of AI and ML, I am committed to leveraging technology to drive innovation and solve complex problems.\n\nAreas of Interest:\n- Artificial Intelligence\n- Machine Learning\n- Data Science\n",
+    "linkedin": "https://www.linkedin.com/in/srijan-roy-29bb19256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    "image": "https://drive.google.com/uc?export=view&id=153LPEJBY7ouNjmOLNuXcG6Wk4Jn6cYRK",
+    "areaOfInterest": "Artificial intelligence and Machine learning "
+  },
+  {
+    "id": 8,
+    "name": "Soumya ",
+    "bio": "Success is defined not by the applause you receive, but by the insults you overcame.",
+    "linkedin": "https://www.linkedin.com/in/soumya2829/",
+    "image": "https://drive.google.com/uc?export=view&id=1FIlK_El5gYrHzdjeXrjECNF66nBAWX_k",
+    "areaOfInterest": "AIML & Data Analytics"
+  },
+  {
+    "id": 9,
+    "name": "Prama Mondal",
+    "bio": "Data analyst, Founder of Ruralinova, B.Tech student at Institute of Engineering and Management",
+    "linkedin": "https://www.linkedin.com/in/prama-mondal-05bb0128a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    "image": "https://drive.google.com/uc?export=view&id=19a1i40jtHwo55j7uOAzyM6_Pp-GYt3sG",
+    "areaOfInterest": "Software-oriented projects on Gen-AI"
+  },
+  {
+    "id": 10,
+    "name": "PRAJAKTA GHOSH",
+    "bio": "I'm an enthusiastic B.Tech ECE student passionate about Machine Learning, AI, and Analog Electronics. I've participated in various hands-on and technical sessions by GDG and others, and attended a study abroad program at NUS to explore cutting-edge tools and technologies. My project work spans innovative hardware circuits and real-world problem-solving software applications, with one project progressing toward a patent. Certified by the Wadhwani Foundation for building a real venture, I bring entrepreneurial skills to turn ideas into impactful solutions.\n\nBeyond academics, I enjoy photography and cinematography,blending my love for concepts with visual storytelling. I also have a flair for digital art and chess, and have achieved Grandmaster level in Abacus, backed by certifications.",
+    "linkedin": "https://www.linkedin.com/in/prajakta-ghosh-18062028b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    "image": "https://drive.google.com/uc?export=view&id=1W3a5BdqptaYcI6eDFKtMPvVp51IvpRUY",
+    "areaOfInterest": "Interested in real-world problem-solving projects using Machine Learning and Generative AI in software-based applications, with a focus on developing skills in time management, meeting deadlines, interacting with clients, and translating problem statements into impactful solutions."
+  },
+  {
+    "id": 11,
+    "name": "Agnideep Goswami ",
+    "bio": "Passionate B.Tech ECE 2nd Year Student (4th Semester) at Institute of Engineering and Management, Salt Lake, Kolkata, with\na deep interest in AI, Machine Learning, Data Science and hands-on hardware projects. Tech-enthusiast focusing on\nlogic-building and problem solving and implementation of AI in regular challenges. Skilled in hardware and programming\nlanguages like Java, C, Python and Machine Learning Algorithms.",
+    "linkedin": "www.linkedin.com/in/agnideep-goswami-678b792a2",
+    "image": "https://drive.google.com/uc?export=view&id=1Ro1A7DteE4zxMJYCwoKHMHk2vFcMPhwW",
+    "areaOfInterest": "ML models, Agentic AI"
+  },
+  {
+    "id": 12,
+    "name": "Jyotiraditya Ray ",
+    "bio": "I am a second-year undergraduate student pursuing a degree in Electronics and Communication Engineering, with a strong interest in Machine Learning and Data Science. With hands-on experience at two companies in the tech domain, I have developed practical skills in data analysis, model development, and deployment. I am passionate about leveraging data-driven solutions and continuously explore innovative approaches at the intersection of ML and engineering.",
+    "linkedin": "www.linkedin.com/in/jyotiraditya-ray-04a152290",
+    "image": "https://drive.google.com/uc?export=view&id=1en47e8o24G63BMYqF0VAI_foYCI6PpIl",
+    "areaOfInterest": "Machine Learning, Data Science, Artificial Intelligence."
+  },
+  {
+    "id": 13,
+    "name": "Rounak Ghara",
+    "bio": "B.Tech student at IEM with experience in Embedded Systems, Robotics, and programming in C, Python, and Java. Passionate about AI/ML and VLSI, with strong teamwork, communication, and problem-solving skills.",
+    "linkedin": "https://www.linkedin.com/in/rounak-ghara-b2851028b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    "image": "https://drive.google.com/uc?export=view&id=1PNe3UdHw9VKABAqEKkCnyQQZXZp7yowz",
+    "areaOfInterest": "AI & ML, ROBOTICS"
+  },
+  {
+    "id": 14,
+    "name": "Samrajya Maity",
+    "bio": "B.Tech ECE student at IEM with skills in C, Python, Java,  along with beginner-level frontend development skills. Worked on Arduino-based IoT projects and  highly interested in AI and Machine Learning, always eager to explore and learn more in emerging tech fields.",
+    "linkedin": "www.linkedin.com/in/samrajya-maity061",
+    "image": "https://drive.google.com/uc?export=view&id=11NYCQKFg3unqWAWNJbmPm13Eawi2DH5V",
+    "areaOfInterest": "AI, ML, Web Development, Robotics"
+  },
+  {
+    "id": 15,
+    "name": "Tanisha Patwari ",
+    "bio": "I am a second year undergraduate student persuing BTech in Computer Science and Engineering (Artificial Intelligence) from Institute of Engineering and Management, Kolkata.",
+    "linkedin": "https://www.linkedin.com/in/tanisha-patwari-47a01528b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    "image": "https://drive.google.com/uc?export=view&id=1SlTffv3WJI_cz9ucrtxAYMErkkBwKfc2",
+    "areaOfInterest": "SDE, ML"
+  },
+  {
+    "id": 16,
+    "name": "Stuti Samanta",
+    "bio": "I am a 2nd year undergraduate student pursuing in B.Tech in Computer Science and Engineering(Artificial Intelligence) from Institute of Engineering and Management",
+    "linkedin": "https://www.linkedin.com/in/stuti-samanta-09401b28a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    "image": "https://drive.google.com/uc?export=view&id=1T4rIFUxEJJHID4k_nQN4GIi6ucjYpYpS",
+    "areaOfInterest": "SDE,ML"
+  },
+  {
+    "id": 17,
+    "name": "Rankit Saha ",
+    "bio": "I am Rankit Saha, a second-year Computer Science and Engineering student at IEM, Kolkata. I have a foundational understanding of frontend web development and a growing interest in Artificial Intelligence and Machine Learning. I am passionate about leveraging technology to solve real-world problems and continuously seek opportunities to expand my knowledge and skills in the tech domain",
+    "linkedin": "https://www.linkedin.com/in/rankit-saha-b52b1728a/",
+    "image": "https://drive.google.com/uc?export=view&id=16f6mETkjz03rvc5j5ZUzBfZPt1zgqbL5",
+    "areaOfInterest": "GenAI in Cybersecurity"
+  },
+  {
+    "id": 18,
+    "name": "Biplab Kumar Jha ",
+    "bio": "Hi, I'm Biplab, a first-year student with a deep passion for Artificial Intelligence and innovative tech development. I'm driven by the desire to create meaningful solutions that address real-world challenges. Whether it\u2019s building AI-powered applications or exploring the intersection of technology and social impact, I love bringing ideas to life through code and creativity. I'm always eager to learn, experiment, and contribute to the evolving world of AI and software development.",
+    "linkedin": "https://www.linkedin.com/in/biplab-jha",
+    "image": "https://drive.google.com/uc?export=view&id=1M9pVqMCHy-rKk-9SAgAFGlmt5kO37PWS",
+    "areaOfInterest": "AI/ML; NLP; AI for Social Good and Sustainability "
+  },
+  {
+    "id": 19,
+    "name": "Saheli Deb ",
+    "bio": "I am a driven Computer Science student (IoT specialization) at the Institute of Engineering and Management, Kolkata. She is a skilled MERN stack developer and an active member of the GenAI community, with a strong foundation in AI, Machine Learning, and Web Development. Saheli has interned at the National University of Singapore, where she worked on intelligent systems and real-world IoT-AI integrations. She\u2019s currently deepening her knowledge in Deep Learning and Cloud Computing, while contributing to impactful projects like an AI-powered voice assistant (Jarvis), a dementia monitoring system using facial recognition, and hybrid AI chatbots. Passionate about innovation, she thrives on solving real-world problems through smart and scalable tech solutions.",
+    "linkedin": "https://www.linkedin.com/in/saheli-deb-5449b5299/",
+    "image": "https://drive.google.com/uc?export=view&id=1MBntDU7IGQE2cmiLeQ2j7_0LwtO66TDy",
+    "areaOfInterest": "Passionate about working in the fields of Artificial Intelligence, Machine Learning, and IoT, with a keen interest in cloud-based smart solutions and full-stack development(mern)."
+  },
+  {
+    "id": 20,
+    "name": "Aranya Banerjee",
+    "bio": "I'm currently pursuing my B.Tech in Electronics and Communication Engineering with a strong passion for building technical skills. I'm deeply interested in the fields of data science and machine learning, and I love exploring how data-driven solutions can shape the future. Always eager to learn, collaborate, and grow in the world of technology.",
+    "linkedin": "www.linkedin.com/in/aranya-banerjee-6015b228b",
+    "image": "https://drive.google.com/uc?export=view&id=1fDsaVGFvzgz_Bfap1S2obKuY0js1mYWi",
+    "areaOfInterest": "Machine Learning"
+  },
+  {
+    "id": 21,
+    "name": "Koushor Roy Choudhury",
+    "bio": "A motivated and detail-oriented professional with a passion for innovation and continuous learning. Skilled in problem-solving and committed to delivering high-quality results, I thrive in dynamic environments and aim to contribute meaningfully to organizational success.",
+    "linkedin": "https://www.linkedin.com/in/koushor-roy-choudhury-049582282/",
+    "image": "",
+    "areaOfInterest": "Software development"
+  }
+]

@@ -4,12 +4,12 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
-import { FaInstagram, FaLinkedin } from 'react-icons/fa'
+import { FaInstagram, FaLinkedin, FaFacebook, FaWhatsappSquare } from 'react-icons/fa'
 
 const Navbar = () => {
-    const [showdropdown, setShowdropdown] = useState(false)
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false)
     const pathname = usePathname()
-    const showNavbar = ["/", "/login", "/content", "/events", "/discussion"].includes(pathname)
+    const showNavbar = ["/", "/login", "/content", "/events", "/discussion", "/subco", "/media", "/industry", "/research", "/content", "/advisor", "/faculty", "/training", "/conference"].includes(pathname)
 
     // const { data: session } = useSession()
     // if (session) {
@@ -21,18 +21,53 @@ const Navbar = () => {
 
     return (
         <>
-            {showNavbar && <nav className='bg-slate-600 w-[90vw] fixed top-10 right-[5vw] rounded-full px-11 py-4 flex justify-between'>
+            {showNavbar && <nav className='bg-slate-600 w-[90vw] fixed top-10 right-[5vw] rounded-full px-10 py-4 flex justify-between'>
                 <div className='logo flex gap-12 justify-center items-center'>
                     <Link href={"/"}>
-                        <Image className='rounded-xl' src={"/logo.jpg"} alt='genai coe logo' height={50} width={50} />
+                        <Image className='rounded-xl' src={"/logo.jpg"} alt='genai coe logo' height={50} width={60} />
                     </Link>
 
-                    <ul className='flex gap-8 items-center text-white'>
-                        <Link href="/"><li className='font-semibold hover:underline hover:shadow-lg'>Home</li></Link>
-                        <Link href="#aboutUs"><li className='font-semibold hover:underline hover:shadow-lg'>About us</li></Link>
-                        <Link href="/content"><li className='font-semibold hover:underline hover:shadow-lg'>Contents</li></Link>
-                        <Link href="/events"><li className='font-semibold hover:underline hover:shadow-lg'>Events</li></Link>
-                        <Link href="#contact"><li className='font-semibold hover:underline hover:shadow-lg'>Contact us</li></Link>
+                    <ul className="flex gap-6 items-center text-white text-lg relative">
+                        <Link href="/">
+                            <li className="font-semibold hover:underline hover:shadow-lg">Home</li>
+                        </Link>
+                        <div
+                            className="relative"
+                            onMouseEnter={() => setIsDropdownOpen(true)}
+                            onMouseLeave={() => setIsDropdownOpen(false)}
+                        >
+                            <button className="font-semibold hover:underline hover:shadow-lg">
+                                Subcommittees
+                            </button>
+                            <div className="absolute top-8 left-0">
+                                {isDropdownOpen && (
+                                    <ul className="w-40 bg-slate-400 text-black rounded-lg shadow-lg">
+                                        <li className="px-4 py-2 hover:bg-gray-200">
+                                            <Link href="/media">Media</Link>
+                                        </li>
+                                        <li className="px-4 py-2 hover:bg-gray-200">
+                                            <Link href="/industry">Industry</Link>
+                                        </li>
+                                        <li className="px-4 py-2 hover:bg-gray-200">
+                                            <Link href="/research">Research</Link>
+                                        </li>
+                                        <li className="px-4 py-2 hover:bg-gray-200">
+                                            <Link href="/content">Content</Link>
+                                        </li>
+                                    </ul>
+                                )}
+                            </div>
+                        </div>
+
+                        <Link href="/content">
+                            <li className="font-semibold hover:underline hover:shadow-lg">Contents</li>
+                        </Link>
+                        <Link href="/events">
+                            <li className="font-semibold hover:underline hover:shadow-lg">Events</li>
+                        </Link>
+                        <Link href="#contact">
+                            <li className="font-semibold hover:underline hover:shadow-lg">Contact us</li>
+                        </Link>
                     </ul>
                 </div>
 
@@ -42,6 +77,12 @@ const Navbar = () => {
                     </Link>
                     <Link className='text-white' href="https://www.instagram.com/iemgenai?igsh=MTRhMTdnYzVxcXB5NA==" target='_blank' rel="noopener noreferrer">
                         <FaInstagram />
+                    </Link>
+                    <Link className='text-white' href="https://www.facebook.com/share/15UTeakAgX/" target='_blank' rel="noopener noreferrer">
+                        <FaFacebook />
+                    </Link>
+                    <Link className='text-white' href="https://whatsapp.com/channel/0029VavIA8lKbYMHjUPl1q2w " target='_blank' rel="noopener noreferrer">
+                        <FaWhatsappSquare />
                     </Link>
                 </div>
 

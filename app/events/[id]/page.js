@@ -20,20 +20,23 @@ export default async function eventsDetails({ params }) {
             <div className="bg-slate-700 w-[70vw] rounded-2xl px-16 py-12 flex flex-col gap-3">
                 <div className="flex flex-col gap-3 justify-center items-center">
                     <h1 className="text-4xl font-bold mb-4 ">{events.title}</h1>
-                    <Image className="mb-3" src="/event1.jpg" alt="image of the events" width={400} height={450} />
+                    <Image className="mb-3" src={events.titlePic} alt="image of the events" width={400} height={450} />
                 </div>
                 <p className="text-justify">{events.desc}</p>
-                <div>
-                    <h2>Photo Gallery</h2>
-                    <div className="flex gap-4">
-                        <Image src={`/${events.pic}`} alt="image of the events" width={200} height={200} />
-                        <Image src={`/${events.pic}`} alt="image of the events" width={200} height={200} />
-                        <Image src={`/${events.pic}`} alt="image of the events" width={200} height={200} />
+                <div className="my-2">
+                    <h2 className="font-bold text-lg">Photo Gallery</h2>
+                    <div className="grid grid-cols-3 w-full gap-4 mt-2">
+                        {events.pic.map((image, index) => (
+                            <Image key={index} src={image} alt="Event Image" width={200} height={200} />
+                        ))}
                     </div>
                 </div>
-                <p className="text-justify">{events.keyPoints}</p>
+                {/* <div className="my-2">
+                    <h2 className="font-bold text-lg">Key Highlights</h2>
+                    <p className="text-justify">{events.keyPoints}</p>
+                </div> */}
                 <p className="text-gray-400 text-sm mt-4">
-                    Organised on: {new Date(events.createdAt).toLocaleDateString()}
+                    Organised on: {new Date(events.organisedOn).toLocaleDateString()}
                 </p>
             </div>
         </div>

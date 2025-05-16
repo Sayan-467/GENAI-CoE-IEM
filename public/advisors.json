@@ -1,0 +1,67 @@
+[
+    {
+        "name": "Raja Roy",
+        "designation": "CTO, HumanizeTech",
+        "img": "https://media-hosting.imagekit.io/3b253a0f68c144c2/WhatsApp%20Image%202025-05-13%20at%2019.46.30_e4d6cc63.jpg?Expires=1841755617&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=yHGWaiWG8qx-YXvbXxqRQKqgIhC2K589iuuc0ITLK8i57DpKYLlzNj-tPMhutbaQWYZEWDksoXCSXo6TgvDaHS-RguCxizYK1Cf~AEgWnXB7wL-CGbm5-0yb87b1vHkuDw8TLs8pU1ZA5Wviy~wx4ygOYiDfvuoNI5PRCqaLRplioub0o~STLe59~UUhLEjvbWTxwPAA67424GUYOsYtZZZmh2ypgn-KDnhEjzbOURSygKU~2CvIwxqC0nU4ngMsFHdmcPpqCLsje85ZXtZR0A2lvQMEj1WgpIc-9ygs6Z~F5FsdeuZ4c7Xj0lmaHTnXa4Wwy6tWgSVsYm0SVc6uVA__"
+    },
+    {
+        "name": "Dr. Souvik Barat",
+        "designation": "Senior Scientist, TCS Research Lab",
+        "img": "https://media-hosting.imagekit.io/3d35d01d44bf40fd/sbharat[1].png?Expires=1841755653&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=W6UXDrYhx5DR~w1tTLT3neGaJ1s4RnI1ba-JnY3DWzMjCv-p28Fh~6~8ZGzlV95EIw3kD56ROx65o3lKsOtiQhfttcUTtDJLe-SMOlpD~K4PPjmABU1yZJ~shaTpDI-duLN3p7taP~2B0Zzux6Wq2lRdKCyyh9B3lKzNY9fohB86Of~tmL9ArmlJJOMj1QbQ9Ym2o5aXlelDLYhzCuQYDTI5d7EFiaoHoYrrdWD1mYb8FKBaQ6XVvJeX8vMcGbSh06HpQthK8Gp-PSF6r7tmHVJOZUCNFnha7w~lznPst~IVJFPaNQEL~E~p-Pgsc22Mb51vXPIAoqd4RRzm8Lyprg__"
+    },
+    {
+        "name": "Dr. Indranil Mitra",
+        "designation": "Partner- Data and Analytics, Pricewaterhouse Coppers",
+        "img": ""
+    },
+    {
+        "name": "Dr. Saptarsi Goswami",
+        "designation": "GenAI specialist, University of Calcutta",
+        "img": "https://media-hosting.imagekit.io/78fa825b72e14ece/WhatsApp%20Image%202025-05-13%20at%2019.46.31_7fc22bb1.jpg?Expires=1841755720&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=lNlbJq9DWAqZT5fBVpUfqb~Rr9Ssv2XefL5kgJ2GnfWLfZcgFMIjxajhDMTWetXYedRkfQpiNKhf05-GWm-y2OIwb2TobNx~4rzcusmF8keIBiS~r99Nf9Zl3fz1MMVps-lsUUIHV7SJ9kkzUMZftaBc0ESQX47tSJ0F2qCiAEyvKw403HBIgXVlYzcPQ3ck~KxTA2qi7pDDK9dEkUFv~RvXScgrg10PTg48CcjhU8zxFa72UQ7bTlKctI5BQuASDnEveBsXlZQjA6y0xDZByIQ3DyZ17qLT40vp5sQVQVQelsYTTd5C4nhRjDcsDtUcx-sC6em7oDCgSeIm0hgIPw__"
+    },
+    {
+        "name": "Mrityunjoy Sen",
+        "designation": "Director, Digital Engineering, LTIMindtree",
+        "img": "https://media-hosting.imagekit.io/870a8e7c592240fc/WhatsApp%20Image%202025-05-13%20at%2019.46.30_ea666032.jpg?Expires=1841755737&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=j8fzsoXNqETYKEGo8IhQyGdS5vpw0BIIEUHwEaS~aa-fX~zQlJ1kac83S0l9pGhHkf4ND7YZq-yTBn2KuVYpAkbsUJoBZjhOt2rlENy-Zals7ey3ksSd~eRHVWHwqQ7QH2UunnYKdb80QBKnKBumDRsOYg5~sxds90oiIjbhNXZTE37aOUlZlu6bowNWqOZGNR2XObD5dY6ayzABmraPSj57U5A-vPq7~IdRUjKbJ304QXR0hHd7o5clkz95-VU8zEyx8pvGJ2odhPchbVMgGI8w4SrhEY0FjlIPLcJGUWH8xLkKmwfeZUsEyXzS0nYTLB7QBuwWD-XF4UmmuPDyYA__"
+    },
+    {
+        "name": "Prabuddha Samaddar",
+        "designation": "Program Manager, Data & Analytics, Tech Mahindra",
+        "img": "https://media-hosting.imagekit.io/ab652f16214a4914/IMG-20250512-WA0093[1].jpg?Expires=1841755871&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=dLtGlwsgym3h~~5fRR43Fmfm~nJiWkSzdXI~kK8O5j4TVFp9bT1JFHRhtnwC1ru2pc-wZhiCWFe5-UlKu0N-YH5blAzQ-~XR~U6USmOtcXTxjmdnEiu8yRncmjFYiTit5DWtzOGdATa2SVY~CPI0~tYm-lAedst7PHJoHGdyyw85MRKk~rO40iXnaBYTy4wTXS715ICmIn9-YInnA1HPyZ1zcsBUzzxss06JgzPNcc02qXEsaFSDS8gYLTORhO4MBc7pnneuyfMcfGj-BC-rPSLi0B3MSpwe4jmx6bOFxFW3BatYWf0k5XjNxuOMZlNZpv8DXy0SnY6UdYT-RnQleQ__"
+    },
+    {
+        "name": "Mrityunjoy Panday",
+        "designation": "Senior Scientist - AI, Cognizant Technology Solutions",
+        "img": "https://media-hosting.imagekit.io/88846395547d41d8/GBOH6HIacAAlPsW[1].jpg?Expires=1841755948&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=AVt1nEYrNh~6rKgW~cPFl1nAekbfe-SnvTpZdUBh3qJYs4lmjAu7M7QsMNgc3jhltQuM04OCdg-ZhYesedLrBxn~RTZsC2IysrVSvVsOz6qLipJma-bWWqPiKRPYhWN4V1WeFT2zZ-Ka8aPpp6q7KR2Xu~Qy21JAvKzKj6iaRH5dMGUNgn1Puq9kM6J3OUhDMRe-IBkYO724XQg211Bz79tSoe6lbeoqR1pJJxD1t5Nbiy5TrT869oz2VN6rNAQThGpPCByPUsIXipXstPYnKOLawnXB8DG2elyE3taP-qBglakthb-c8jXpl2Tei4yFdDFo2eV2jEvYlQfiKD9z3w__"
+    },
+    {
+        "name": "Suman Saha",
+        "designation": "Associate Director, Data & AI, Cognizant Technology Solutions",
+        "img": "https://media-hosting.imagekit.io/474cf74944a9417a/IMG-20250512-WA0092[1].jpg?Expires=1841755921&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=P3uSU5EPwnO4JWuuyr5AAzSqlmZWF9b7zWeayrAeSaZula-hkZdaWTw9LYQhmJZLYMkbJT6uwCwgGIUkY7TcKk~E3MXS0LzDw0D1y-hNkVZzfLctl0UbgetL7gObx0TGtvd-ErnnueX2uj3ljL3Jx0BzqdCbHlTEDwl8ynyrw31VmXYlHAMp8g6~2dlw2YAqYan7HLhZB9rtr14pQBiMXx5R-Fh19g88tuxfP0lGKKL13SUygH14gO5EbB97xT0X1~WKSony8qCgBsC83pUJZDohHxNkDwbCZZn41u1Y6wCgJU-HtzM-HM-6vVjPtR6jQDCKjxIko-zPB3HotQUSHw__"
+    },
+    {
+        "name": "Rangin Lahiri",
+        "designation": "CEO, Bair.ai",
+        "img": "https://media-hosting.imagekit.io/1b3cab9a3aac4d26/5b8d4e3f3e3bb1000c1bb192_338x233[1].png?Expires=1841755780&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=tDIwDqfhBt9m9KPIAYwXm7Xmcce2JpZgPO~AxHV7x4Ql52KAu9qxVYz9FHNMzI5y4YlvB1oqX-uwWAKkDHDbLL6nFH4~46zMu2YzoHYomFXWfPOwLFuACu5SsRiRr-QRLm77f3YMT0SKFaJz7nQrb42kMRaa1E-Eo4W4Vi0kddemE2Ve1HQnaJ6nS7GAv-FZkIx9VzHkaBFEYnyVgULmfPi0wydOEB5Vy~GA4wLiBJ~YLsXfzIKJ8dg9tNiizppCWXwoRquLUByrD3joQB7NI9NSrkyorT0AFPaUC0Qdi-Fq70tKIg4AWwqb6~YRC-UwPnQs6qcX5ASC~K4i5C31wA__"
+    },
+    {
+        "name": "Abhijit Pal",
+        "designation": "Executive Director, Alphaxine",
+        "img": ""
+    },
+    {
+        "name": "Sanjay Guha Thakurta",
+        "designation": "Executive Partner, IBM",
+        "img": ""
+    },
+    {
+        "name": "Shrishendu Sengupta",
+        "designation": "Global Head, Digital Process Automation, Maantic INC",
+        "img": ""
+    },
+    {
+        "name": "Ambarish Ganguly",
+        "designation": "Data and AI Practice Head - Energy & utilities, TCS",
+        "img": ""
+    }
+]
