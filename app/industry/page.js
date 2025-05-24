@@ -45,6 +45,7 @@ const page = () => {
                                 <b>Associate Professor, Dept. of CSE & CSE(AI), IEM Kolkata</b>
                             </div>
                         </div>
+                        <div className='font-semibold text-blue-300'><Link target="_blank" href="https://www.linkedin.com/in/mahatasainikk/">Linkedin</Link></div>
                     </div>
                     <div className="bg-slate-700 hover:bg-slate-800 rounded-2xl px-2 w-[320px] sm:p-4 md:p-6 flex flex-col justify-center items-center gap-2">
                         <div>
@@ -56,6 +57,7 @@ const page = () => {
                                 <b>Professor of Practice, Dept. of CSE & CSE(AI), IEM Kolkata</b>
                             </div>
                         </div>
+                        <div className='font-semibold text-blue-300'><Link target="_blank" href="https://www.linkedin.com/in/saikat-dutt-pmp-pmi-acp-csm-94a6a62/">Linkedin</Link></div>
                     </div>
                     <div className="bg-slate-700 hover:bg-slate-800 rounded-2xl px-2 w-[320px] sm:p-4 md:p-6 flex flex-col justify-center items-center gap-2">
                         <div>
@@ -67,6 +69,7 @@ const page = () => {
                                 <b>Asst. Professor, Dept. of CSE & CSE(AI), IEM Kolkata</b>
                             </div>
                         </div>
+                        <div className='font-semibold text-blue-300'><Link target="_blank" href="https://www.linkedin.com/in/ankita-sen-7ba995146/">Linkedin</Link></div>
                     </div>
                 </div>
             </div>
@@ -80,9 +83,9 @@ const page = () => {
                         </div>
                         <h2 className="text-xl sm:text-2xl font-semibold">Sanket Ghosh</h2>
                         <p className="text-center text-sm mb-2 line-clamp-3">GenAI and SaaS Application developer</p>
-                        <div className='font-semibold text-blue-300'><Link href="https://www.linkedin.com/in/sanketghosh19/">Linkedin URL</Link></div>
-                        <div className='font-semibold text-violet-300'><Link href="https://github.com/sanketghosh19">Github URL</Link></div>
-                        <div className='font-semibold mb-1 text-slate-200'><Link href="https://portfolio-tawny-chi-91.vercel.app/">Portfolio URL</Link></div>
+                        <div className='font-semibold text-blue-300'><Link target="_blank" href="https://www.linkedin.com/in/sanketghosh19/">Linkedin</Link></div>
+                        <div className='font-semibold text-violet-300'><Link target="_blank" href="https://github.com/sanketghosh19">Github</Link></div>
+                        <div className='font-semibold mb-1 text-slate-200'><Link target="_blank" href="https://portfolio-tawny-chi-91.vercel.app/">Portfolio</Link></div>
                     </div>
                     <div className="bg-slate-700 hover:bg-slate-800 rounded-2xl p-2 sm:p-4 md:p-6 flex flex-col justify-center items-center gap-2 w-[348px]">
                         <div>
@@ -90,8 +93,8 @@ const page = () => {
                         </div>
                         <h2 className="text-xl sm:text-2xl font-semibold">Sujaan Bhattacharyya</h2>
                         <p className="text-center text-sm mb-2 line-clamp-3">I'm a Python developer passionate about AI, automation, and building tools that solve real problems. I enjoy exploring new languages—both human and programming—and I'm always curious about how things work under the hood.</p>
-                        <div className='font-semibold text-blue-300'><Link href="https://www.linkedin.com/in/sujaan-bhattacharyya-92a679257/">Linkedin URL</Link></div>
-                        <div className='font-semibold mb-1 text-violet-300'><Link href="https://github.com/Sujaanb">Github URL</Link></div>
+                        <div className='font-semibold text-blue-300'><Link target="_blank" href="https://www.linkedin.com/in/sujaan-bhattacharyya-92a679257/">Linkedin</Link></div>
+                        <div className='font-semibold mb-1 text-violet-300'><Link target="_blank" href="https://github.com/Sujaanb">Github</Link></div>
                     </div>
                 </div>
             </div>
@@ -114,7 +117,7 @@ const page = () => {
                             <h2 className="text-xl md:text-2xl font-semibold text-center">{student.name}</h2>
                             <p className="text-center text-sm mb-2 line-clamp-3">{student.bio}</p>
                             <div className='font-semibold mb-2 text-blue-300'>
-                                <Link href={student.linkedin}>Linkedin URL</Link>
+                                <Link target="_blank" href={student.linkedin}>Linkedin</Link>
                             </div>
                             <div className="text-center text-xs text-gray-300">Area of Interests: <span className='font-bold'>{student.areaOfInterest}</span></div>
                         </div>

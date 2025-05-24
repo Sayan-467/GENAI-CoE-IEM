@@ -5,14 +5,31 @@ import Image from "next/image";
 export default async function eventsDetails({ params }) {
     const { id } = params;
 
-    const client = await clientPromise;
-    const db = client.db("genai-coe");
-    const collection = db.collection("events");
+    // Fetching events details from the API
+    const apiUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/api/events/${id}`;
+    let res;
+    try {
+        res = await fetch(apiUrl, {
+            cache: "no-store",
+        });
+    } catch (err) {
+        console.error("Fetch error:", err);
+        return <div>Error loading events details...</div>;
+    }
 
-    const events = await collection.findOne({ _id: new BSON.ObjectId(id) });
+    if (!res || !res.ok) {
+        console.error("API response error:", res && res.status, apiUrl);
+        // Show a more specific message for 404
+        if (res && res.status === 404) {
+            return <div>events not found (404)</div>;
+        }
+        return <div>Error loading events details...</div>;
+    }
+
+    const events = await res.json();
 
     if (!events) {
-        return <div>Events not found</div>;
+        return <div>events not found</div>;
     }
 
     return (

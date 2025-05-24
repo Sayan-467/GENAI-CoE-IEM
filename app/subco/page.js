@@ -12,17 +12,17 @@ const Subco = () => {
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
                 <div className="bg-slate-700 rounded-2xl p-2 sm:p-6 md:p-8 flex flex-col gap-2">
-                    <Link  href="/conference">
-                        <h2 className="text-xl sm:text-2xl font-semibold">Conference/Seminar Subcommittee</h2>
+                    <Link  href="/media">
+                        <h2 className="text-xl sm:text-2xl font-semibold">Media/Publicity Subcommittee</h2>
                     </Link>
                     <div className="flex flex-col justify-center items-start gap-2">
                         <div className="text-md sm:text-base">
-                            <b>Faculty Incharges:</b> Dr. Amit Kumar Das, Dr. Moutushi Singh Biswas 
+                            <b>Faculty Incharges:</b> Dr. Monalisa Dey, Prof. Bavrabi Ghosh
                         </div>
                         <div className="text-md sm:text-base">
-                            <b>Student Leads:</b> Archita Dasgupta, Nishaad Mishra
+                            <b>Student Leads:</b> Chandrashekhar Lall Chaudhury, Sagnik Rahman
                         </div>
-                        <Link  href="/conference">
+                        <Link href="/media">
                             <button
                                 type="button"
                                 className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medzium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
@@ -95,18 +95,19 @@ const Subco = () => {
                         </Link>
                     </div>
                 </div>
+                
                 <div className="bg-slate-700 rounded-2xl p-2 sm:p-6 md:p-8 flex flex-col gap-2">
-                    <Link  href="/media">
-                        <h2 className="text-xl sm:text-2xl font-semibold">Media/Publicity Subcommittee</h2>
+                    <Link  href="/conference">
+                        <h2 className="text-xl sm:text-2xl font-semibold">Conference/Seminar Subcommittee</h2>
                     </Link>
                     <div className="flex flex-col justify-center items-start gap-2">
                         <div className="text-md sm:text-base">
-                            <b>Faculty Incharges:</b> Dr. Monalisa Dey, Prof. Bavrabi Ghosh
+                            <b>Faculty Incharges:</b> Dr. Amit Kumar Das, Dr. Moutushi Singh Biswas 
                         </div>
                         <div className="text-md sm:text-base">
-                            <b>Student Leads:</b> Chandrashekhar Lall Chaudhury, Sagnik Rahman
+                            <b>Student Leads:</b> Archita Dasgupta, Nishaad Mishra
                         </div>
-                        <Link href="/media">
+                        <Link  href="/conference">
                             <button
                                 type="button"
                                 className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medzium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"

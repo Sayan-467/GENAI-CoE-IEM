@@ -24,6 +24,7 @@ const page = () => {
                                 <b>Professor, Dept. of CSE & CSE(AI), IEM Kolkata</b>
                             </div>
                         </div>
+                        <div className='font-semibold text-blue-300'><Link target="_blank" href="https://www.linkedin.com/in/darothi-sarkar-9a994453/">Linkedin</Link></div>
                     </div>
                     <div className="bg-slate-700 hover:bg-slate-800 rounded-2xl px-2 w-[320px] sm:p-4 md:p-6 flex flex-col justify-center items-center gap-2">
                         <div>
@@ -35,6 +36,7 @@ const page = () => {
                                 <b>Associate Professor, Dept. of CSE & CSE(AI), IEM Kolkata</b>
                             </div>
                         </div>
+                        <div className='font-semibold text-blue-300'><Link target="_blank" href="https://www.linkedin.com/in/anupam-mondal-ph-d-8a7a1a39/">Linkedin</Link></div>
                     </div>
                 </div>
             </div>
@@ -47,16 +49,16 @@ const page = () => {
                             <Image src={"/research/lead1.jpg"} alt="Lead 1" width={300} height={300} className="w-[300px] h-[270px] object-cover object-top rounded-3xl mb-2" />
                         </div>
                         <h2 className="text-xl sm:text-2xl font-semibold">Sanjan Baitalik</h2>
-                        <p className="text-center text-sm mb-2 line-clamp-3">A Senior CSE Student and Research Lead of the GenAI CoE, proficient in AI/ML/GenAI, with research experience in financial forecasting and fuzzy feature selection, aspiring to pursue a PhD</p>
-                        <div className='font-semibold mb-2 text-blue-300'><Link href="https://www.linkedin.com/in/sanjanbaitalik/">Linkedin URL</Link></div>
+                        <p className="text-center text-sm mb-2 line-clamp-4">A Senior CSE Student and Research Lead of the GenAI CoE, proficient in AI/ML/GenAI, with research experience in financial forecasting and fuzzy feature selection, aspiring to pursue a PhD</p>
+                        <div className='font-semibold mb-2 text-blue-300'><Link target="_blank" href="https://www.linkedin.com/in/sanjanbaitalik/">Linkedin</Link></div>
                     </div>
                     <div className="bg-slate-700 hover:bg-slate-800 rounded-2xl p-2 sm:p-4 md:p-6 flex flex-col justify-center items-center gap-2 w-[348px]">
                         <div>
                             <Image src={"/research/lead2.jpeg"} alt="Lead 1" width={300} height={300} className="w-[300px] h-[270px] object-cover object-top rounded-3xl mb-2" />
                         </div>
                         <h2 className="text-xl sm:text-2xl font-semibold">Rajashik Dutta</h2>
-                        <p className="text-center text-sm mb-2 line-clamp-3">Student Research Lead of the GenAI CoE, currently a Senior CSE(AI) student.  Proficiency: AI/ML/GenAI. Research & interests: Financial forecasting, fuzzy feature selection, cryptocurrency price prediction</p>
-                        <div className='font-semibold mb-2 text-blue-300'><Link href="https://www.linkedin.com/in/rajashikdatta/">Linkedin URL</Link></div>
+                        <p className="text-center text-sm mb-2 line-clamp-4">Student Research Lead of the GenAI CoE, currently a Senior CSE(AI) student.  Proficiency: AI/ML/GenAI. Research & interests: Financial forecasting, fuzzy feature selection, cryptocurrency price prediction</p>
+                        <div className='font-semibold mb-2 text-blue-300'><Link target="_blank" href="https://www.linkedin.com/in/rajashikdatta/">Linkedin</Link></div>
                     </div>
                 </div>
             </div>

@@ -1,34 +1,64 @@
+// /app/api/events/route.js
 import { NextResponse } from "next/server";
 import clientPromise from "@/lib/mongodb";
 
 export async function GET() {
+  try {
     const client = await clientPromise;
     const db = client.db("genai-coe");
-    const collection = db.collection("events");
+    const collection = db.collection("event");
 
-    try {
-        const events = await collection
-            .find({})
-            .sort({ organisedOn: -1 })
-            .toArray();
+    const events = await collection
+      .find({})
+      .sort({ createdAt: -1 })
+      .toArray();
 
-        return NextResponse.json(events);
-    } catch (error) {
-        return NextResponse.json({ success: false, error: true, message: "Error fetching events", error: error }, { status: 500 })
-    }
+    // Convert _id to string for each event to avoid serialization issues
+    const serializedEvents = events.map(event => ({
+      ...event,
+      _id: event._id?.toString?.() ?? event._id,
+      createdAt: event.createdAt ? new Date(event.createdAt).toISOString() : null,
+    }));
+
+    return NextResponse.json(serializedEvents);
+  } catch (error) {
+    console.error("Database Error:", error.message);
+    return NextResponse.json(
+      { success: false, error: true, message: "Error fetching events", details: error.message },
+      { status: 500 }
+    );
+  }
 }
 
 export async function POST(request) {
-    const body = await request.json();
+  try {
     const client = await clientPromise;
     const db = client.db("genai-coe");
-    const collection = db.collection("events");
+    const collection = db.collection("event");
 
-    try {
-        const result = await collection.insertOne(body);
+    const body = await request.json();
 
-        return NextResponse.json({ success: true, error: false, message: "Event added successfully", result: result });
-    } catch (error) {
-        return NextResponse.json({ success: false, error: true, message: "Error adding event", error: error }, { status: 500 })
+    // Optional: Add timestamp if not already present
+    if (!body.createdAt) {
+      body.createdAt = new Date();
     }
+
+    const result = await collection.insertOne(body);
+
+    return NextResponse.json({
+      success: true,
+      error: false,
+      message: "event added successfully",
+      result: {
+        ...result,
+        insertedId: result.insertedId?.toString?.() ?? result.insertedId
+      },
+    });
+  } catch (error) {
+    console.error("Database Error:", error.message);
+    return NextResponse.json(
+      { success: false, error: true, message: "Error adding event", details: error.message },
+      { status: 500 }
+    );
+  }
 }

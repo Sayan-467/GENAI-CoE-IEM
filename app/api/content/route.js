@@ -3,11 +3,11 @@ import { NextResponse } from "next/server";
 import clientPromise from "@/lib/mongodb";
 
 export async function GET() {
-  const client = await clientPromise;
-  const db = client.db("genai-coe");
-  const collection = db.collection("content");
-
   try {
+    const client = await clientPromise;
+    const db = client.db("genai-coe");  // Make sure this is the correct DB name
+    const collection = db.collection("content");
+
     const contents = await collection
       .find({})
       .sort({ createdAt: -1 })
@@ -15,6 +15,7 @@ export async function GET() {
 
     return NextResponse.json(contents);
   } catch (error) {
+    console.error("Database Error:", error.message);
     return NextResponse.json(
       { success: false, error: true, message: "Error fetching contents", details: error.message },
       { status: 500 }
@@ -23,11 +24,11 @@ export async function GET() {
 }
 
 export async function POST(request) {
-  const client = await clientPromise;
-  const db = client.db("genai-coe");
-  const collection = db.collection("content");
-
   try {
+    const client = await clientPromise;
+    const db = client.db("genai-coe");
+    const collection = db.collection("content");
+
     const body = await request.json();
     
     // Optional: Add timestamp if not already present
@@ -44,6 +45,7 @@ export async function POST(request) {
       result: result,
     });
   } catch (error) {
+    console.error("Database Error:", error.message);
     return NextResponse.json(
       { success: false, error: true, message: "Error adding content", details: error.message },
       { status: 500 }

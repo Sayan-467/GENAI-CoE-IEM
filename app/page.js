@@ -116,21 +116,21 @@ export default function Home() {
           <Link href={"/subco"}>
             <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-lg font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
               <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                Visit Our Subcommittees
+                Our Subcommittees
               </span>
             </button>
           </Link>
           <Link href={"/advisor"}>
             <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-lg font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
               <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                Visit Advisory Committee 
+                Our Advisory Committee 
               </span>
             </button>
           </Link>
           <Link href={"/faculty"}>
             <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-lg font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
               <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                View Faculty Mentors
+                Our Faculty Mentors
               </span>
             </button>
           </Link>
@@ -256,44 +256,43 @@ export default function Home() {
               of the Guest Speaker Series presented by the Generative AI - Centre of Excellence (CoE) at IEM! 🎤✨
               Speaker: Shivaji Basu, Head of GenAI HiTech Industry Vertical
             </p>
-            <p className="text-sm mb-2">Organised on: 2024-12-19</p>
+            <p className="text-sm mb-2">Organised on: 19th Dec.,2024</p>
             <button
               type="button"
               className="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 w-full sm:w-auto"
             >
-              View Events
+              <Link href="/events">View Events</Link>
             </button>
           </div>
           <div className="flex flex-col justify-center items-center p-4 bg-slate-700 hover:bg-slate-800 rounded-2xl">
-            <img src="/event1.jpg" alt="" className="w-full h-40 rounded-3xl mb-4 object-cover" />
-            <h2 className="text-xl md:text-2xl font-bold mb-2 text-white">Industry Attitude to GEN AI</h2>
+            <img src="/event2.jpg" alt="" className="w-full h-40 rounded-3xl mb-4 object-cover" />
+            <h2 className="text-xl md:text-2xl font-bold mb-2 text-white">Generative AI in Industry: Hope, Hype or Reality?</h2>
             <p className="text-white text-justify flex-grow mb-2">
-              Welcome to the Guest Lecture Series presented by IEM Generative AI CoE. Join us for an inspiring session
-              of the Guest Speaker Series presented by the Generative AI - Centre of Excellence (CoE) at IEM! 🎤✨
-              Speaker: Shivaji Basu, Head of GenAI HiTech Industry Vertical
+              Welcome to the Panel Discussion Series presented by IEM Generative AI CoE along with IEM ICDC. 
+              Speakers: Mrityunjoy Sen (Director, LTIMindtree), Suman Kumar Saha (Associate Director, Cognizant Technology Solutions), Tamal Datta (Managing Director, Skybuffer Solutions Pvt. Ltd), and Prabuddha Samaddar (Data & Analytics Program Manager, Tech Mahindra)
             </p>
-            <p className="text-sm mb-2">Organised on: 2024-12-19</p>
+            <p className="text-sm mb-2">Organised on: 11th Apr.,2025</p>
             <button
               type="button"
               className="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 w-full sm:w-auto"
             >
-              View Events
+              <Link href="/events">View Events</Link>
             </button>
           </div>
           <div className="flex flex-col justify-center items-center p-4 bg-slate-700 hover:bg-slate-800 rounded-2xl">
-            <img src="/event1.jpg" alt="" className="w-full h-40 rounded-3xl mb-4 object-cover" />
-            <h2 className="text-xl md:text-2xl font-bold mb-2 text-white">Industry Attitude to GEN AI</h2>
+            <img src="/event3.png" alt="" className="w-full h-40 rounded-3xl mb-4 object-cover" />
+            <h2 className="text-xl md:text-2xl font-bold mb-2 text-white">Introduction, Networking & CV Workshop</h2>
             <p className="text-white text-justify flex-grow mb-2">
               Welcome to the Guest Lecture Series presented by IEM Generative AI CoE. Join us for an inspiring session
               of the Guest Speaker Series presented by the Generative AI - Centre of Excellence (CoE) at IEM! 🎤✨
-              Speaker: Shivaji Basu, Head of GenAI HiTech Industry Vertical
+              Speaker: Biswajit Chaki, Head of Engineering Solutions, IEM Research Foundation
             </p>
-            <p className="text-sm mb-2">Organised on: 2024-12-19</p>
+            <p className="text-sm mb-2">Organised on: 9th May,2025</p>
             <button
               type="button"
               className="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 w-full sm:w-auto"
             >
-              View Events
+              <Link href="/events">View Events</Link>
             </button>
           </div>
         </div>

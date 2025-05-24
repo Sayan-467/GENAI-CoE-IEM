@@ -4,9 +4,18 @@ import clientPromise from "@/lib/mongodb"
 export default async function EventsPage() {
   const client = await clientPromise
   const db = client.db("genai-coe")
-  const collection = db.collection("events")
+  // FIX: Use the correct collection name "event" (not "events")
+  const collection = db.collection("event")
 
   const events = await collection.find({}).sort({ organisedOn: -1 }).toArray()
+
+  // Convert _id to string for serialization if needed
+  const serializedEvents = events.map((event) => ({
+    ...event,
+    _id: event._id?.toString?.() ?? event._id,
+    organisedOn: event.organisedOn ? new Date(event.organisedOn).toISOString() : null,
+    createdAt: event.createdAt ? new Date(event.createdAt).toISOString() : null,
+  }))
 
   return (
     <div className="pt-20 sm:pt-28 md:pt-36 lg:pt-44 pb-8 md:pb-14 px-4 sm:px-8 md:px-16 lg:px-24 container mx-auto">
@@ -17,7 +26,7 @@ export default async function EventsPage() {
         </span>
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
-        {events.map((event) => (
+        {serializedEvents.map((event) => (
           <div key={event._id} className="bg-slate-700 rounded-2xl p-4 sm:p-6 md:p-8 flex flex-col gap-2">
             <Link target="_blank" href={`/events/${event._id}`}>
               <h2 className="text-xl sm:text-2xl font-semibold">{event.title}</h2>

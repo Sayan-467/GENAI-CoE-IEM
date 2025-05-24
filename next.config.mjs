@@ -9,6 +9,12 @@ const nextConfig = {
             'instagram.fccu20-1.fna.fbcdn.net',
             'media-hosting.imagekit.io',
             'drive.google.com'
+        ],
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: '**'
+            }
         ]
     }
 };

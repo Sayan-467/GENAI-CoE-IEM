@@ -3,11 +3,19 @@ import Link from "next/link";
 
 export default async function Content() {
   // Fetching data from the API route
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/content`, {
-    cache: "no-store",
-  });
+  const apiUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/api/content`;
+  let res;
+  try {
+    res = await fetch(apiUrl, {
+      cache: "no-store",
+    });
+  } catch (err) {
+    console.error("Fetch error:", err, apiUrl);
+    return <div>Error loading contents...</div>;
+  }
 
-  if (!res.ok) {
+  if (!res || !res.ok) {
+    console.error("API response error:", res && res.status, apiUrl);
     return <div>Error loading contents...</div>;
   }
 
