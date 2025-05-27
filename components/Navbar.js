@@ -52,7 +52,10 @@ const Navbar = () => {
                                             <Link href="/research">Research</Link>
                                         </li>
                                         <li className="px-4 py-2 hover:bg-gray-200">
-                                            <Link href="/content">Content</Link>
+                                            <Link href="/training">Training</Link>
+                                        </li>
+                                        <li className="px-4 py-2 hover:bg-gray-200">
+                                            <Link href="/conference">Conference</Link>
                                         </li>
                                     </ul>
                                 )}
@@ -60,7 +63,7 @@ const Navbar = () => {
                         </div>
 
                         <Link href="/content">
-                            <li className="font-semibold hover:underline hover:shadow-lg">Contents</li>
+                            <li className="font-semibold hover:underline hover:shadow-lg">Content</li>
                         </Link>
                         <Link href="/events">
                             <li className="font-semibold hover:underline hover:shadow-lg">Events</li>

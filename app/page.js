@@ -25,7 +25,7 @@ export default function Home() {
               </h1>
               <p className="my-2 max-w-xl py-3 md:py-6 tracking-tight text-3xl font-normal text-justify">
                 <div className="my-2">Igniting Imagination,</div>
-                <div className="my-2">Accelerating Innovation !</div>
+                <div className="my-2">Accelerating Innovation!</div>
               </p>
             </div>
           </div>
@@ -42,7 +42,7 @@ export default function Home() {
               type="button"
               className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
             >
-              Explore our Contents
+              Explore our Content
             </button>
             <button
               onClick={() => {
@@ -59,7 +59,7 @@ export default function Home() {
 
       <section className="border-b border-neutral-900 py-3 px-4 sm:px-8 md:px-12 lg:px-24">
         <h2 id="aboutUs" className="my-8 md:my-12 text-center text-3xl md:text-4xl text-white">
-          About <span className="text-neutral-500">Us</span>
+          About Us
         </h2>
         <div className="flex justify-center items-center flex-wrap">
           <div className="w-full lg:w-1/2 p-4 lg:p-8">
@@ -178,7 +178,7 @@ export default function Home() {
       {/* content section  */}
       <section className="border-b border-neutral-900 py-3 px-4 sm:px-8 md:px-12 lg:px-24">
         <h2 className="my-8 md:my-12 text-center text-3xl md:text-4xl text-white">
-          Explore our <span className="text-purple-600 tracking-tight"> Top Contents</span>
+          Explore our <span className="text-purple-600 tracking-tight"> Top Content</span>
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="flex flex-col justify-center items-center p-4 bg-slate-700 hover:bg-slate-800 rounded-2xl">
@@ -194,7 +194,7 @@ export default function Home() {
               type="button"
               className="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 w-full sm:w-1/2"
             >
-              <Link href="https://www.instagram.com/p/DHSjRW4SKqt/?igsh=MW1mdXNubTRzMXIzOQ==">View Contents</Link>
+              <Link href="https://www.instagram.com/p/DHSjRW4SKqt/?igsh=MW1mdXNubTRzMXIzOQ==">View Content</Link>
             </button>
           </div>
           <div className="flex flex-col justify-center items-center p-4 bg-slate-700 hover:bg-slate-800 rounded-2xl">
@@ -210,7 +210,7 @@ export default function Home() {
               type="button"
               className="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 w-full sm:w-1/2"
             >
-              <Link href="https://www.instagram.com/p/DHLAY5lyqoA/?igsh=NWdjdzJ4Y3dpd2My">View Contents</Link>
+              <Link href="https://www.instagram.com/p/DHLAY5lyqoA/?igsh=NWdjdzJ4Y3dpd2My">View Content</Link>
             </button>
           </div>
           <div className="flex flex-col justify-center items-center p-4 bg-slate-700 hover:bg-slate-800 rounded-2xl">
@@ -226,12 +226,12 @@ export default function Home() {
               type="button"
               className="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 w-full sm:w-1/2"
             >
-              <Link href="https://www.instagram.com/p/DHIVYBsSNS9/?igsh=MW93b2c1enZxN3FscQ==">View Contents</Link>
+              <Link href="https://www.instagram.com/p/DHIVYBsSNS9/?igsh=MW93b2c1enZxN3FscQ==">View Content</Link>
             </button>
           </div>
         </div>
         <div className="mt-4 font-semibold text-lg md:text-xl text-center">
-          For Visiting our Daily Contents{" "}
+          For Visiting our Daily Content{" "}
           <Link href={"/content"}>
             <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
               <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">

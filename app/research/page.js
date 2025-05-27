@@ -44,20 +44,20 @@ const page = () => {
             <div className="flex flex-col justify-center items-center min-h-screen">
                 <h2 className='text-3xl font-bold mb-8 mt-4'>Student Team Leads</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-10">
-                    <div className="bg-slate-700 hover:bg-slate-800 rounded-2xl p-2 sm:p-4 md:p-6 flex flex-col justify-center items-center gap-2 w-[348px]">
+                    <div className="bg-slate-700 hover:bg-slate-800 rounded-2xl p-2 sm:p-4 md:p-6 flex flex-col justify-center items-center gap-2 w-[348px] group transition-all duration-300">
                         <div>
-                            <Image src={"/research/lead1.jpg"} alt="Lead 1" width={300} height={300} className="w-[300px] h-[270px] object-cover object-top rounded-3xl mb-2" />
+                            <Image src={"/research/lead1.jpg"} alt="Lead 1" width={300} height={300} className="w-[300px] h-[270px] object-cover object-top rounded-3xl mb-2 transition-all duration-300" />
                         </div>
                         <h2 className="text-xl sm:text-2xl font-semibold">Sanjan Baitalik</h2>
-                        <p className="text-center text-sm mb-2 line-clamp-4">A Senior CSE Student and Research Lead of the GenAI CoE, proficient in AI/ML/GenAI, with research experience in financial forecasting and fuzzy feature selection, aspiring to pursue a PhD</p>
+                        <p className="text-center text-sm mb-2 transition-all duration-300 line-clamp-4 group-hover:line-clamp-none group-hover:overflow-y-auto group-hover:max-h-[200px]">A Senior CSE Student and Research Lead of the GenAI CoE, proficient in AI/ML/GenAI, with research experience in financial forecasting and fuzzy feature selection, aspiring to pursue a PhD</p>
                         <div className='font-semibold mb-2 text-blue-300'><Link target="_blank" href="https://www.linkedin.com/in/sanjanbaitalik/">Linkedin</Link></div>
                     </div>
-                    <div className="bg-slate-700 hover:bg-slate-800 rounded-2xl p-2 sm:p-4 md:p-6 flex flex-col justify-center items-center gap-2 w-[348px]">
+                    <div className="bg-slate-700 hover:bg-slate-800 rounded-2xl p-2 sm:p-4 md:p-6 flex flex-col justify-center items-center gap-2 w-[348px] group transition-all duration-300">
                         <div>
-                            <Image src={"/research/lead2.jpeg"} alt="Lead 1" width={300} height={300} className="w-[300px] h-[270px] object-cover object-top rounded-3xl mb-2" />
+                            <Image src={"/research/lead2.jpeg"} alt="Lead 1" width={300} height={300} className="w-[300px] h-[270px] object-cover object-top rounded-3xl mb-2 transition-all duration-300" />
                         </div>
                         <h2 className="text-xl sm:text-2xl font-semibold">Rajashik Dutta</h2>
-                        <p className="text-center text-sm mb-2 line-clamp-4">Student Research Lead of the GenAI CoE, currently a Senior CSE(AI) student.  Proficiency: AI/ML/GenAI. Research & interests: Financial forecasting, fuzzy feature selection, cryptocurrency price prediction</p>
+                        <p className="text-center text-sm mb-2 transition-all duration-300 line-clamp-4 group-hover:line-clamp-none group-hover:overflow-y-auto group-hover:max-h-[200px]">Student Research Lead of the GenAI CoE, currently a Senior CSE(AI) student.  Proficiency: AI/ML/GenAI. Research & interests: Financial forecasting, fuzzy feature selection, cryptocurrency price prediction</p>
                         <div className='font-semibold mb-2 text-blue-300'><Link target="_blank" href="https://www.linkedin.com/in/rajashikdatta/">Linkedin</Link></div>
                     </div>
                 </div>

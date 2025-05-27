@@ -34,14 +34,14 @@ export default async function eventsDetails({ params }) {
 
     return (
         <div className="container mx-auto py-24 px-16 flex justify-center items-center">
-            <div className="bg-slate-700 w-[70vw] rounded-2xl px-16 py-12 flex flex-col gap-3">
+            <div className="bg-slate-200 w-[70vw] rounded-2xl px-16 py-12 flex flex-col gap-3">
                 <div className="flex flex-col gap-3 justify-center items-center">
-                    <h1 className="text-4xl font-bold mb-4 ">{events.title}</h1>
+                    <h1 className="text-4xl font-bold mb-4 text-black">{events.title}</h1>
                     <Image className="mb-3" src={events.titlePic} alt="image of the events" width={400} height={450} />
                 </div>
-                <p className="text-justify">{events.desc}</p>
+                <p className="text-justify text-black">{events.desc}</p>
                 <div className="my-2">
-                    <h2 className="font-bold text-lg">Photo Gallery</h2>
+                    <h2 className="font-bold text-lg text-black">Photo Gallery</h2>
                     <div className="grid grid-cols-3 w-full gap-4 mt-2">
                         {events.pic.map((image, index) => (
                             <Image key={index} src={image} alt="Event Image" width={200} height={200} />
@@ -52,7 +52,7 @@ export default async function eventsDetails({ params }) {
                     <h2 className="font-bold text-lg">Key Highlights</h2>
                     <p className="text-justify">{events.keyPoints}</p>
                 </div> */}
-                <p className="text-gray-400 text-sm mt-4">
+                <p className="text-black text-sm mt-4">
                     Organised on: {new Date(events.organisedOn).toLocaleDateString()}
                 </p>
             </div>

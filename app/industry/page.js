@@ -77,22 +77,22 @@ const page = () => {
             <div className="flex flex-col justify-center items-center min-h-screen">
                 <h2 className='text-3xl font-bold mb-8'>Student Team Leads</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-10">
-                    <div className="bg-slate-700 hover:bg-slate-800 rounded-2xl p-2 sm:p-4 md:p-6 flex flex-col justify-center items-center gap-2 w-[348px]">
+                    <div className="group bg-slate-700 hover:bg-slate-800 rounded-2xl p-2 sm:p-4 md:p-6 flex flex-col justify-center items-center gap-2 w-[348px] transition-all duration-300">
                         <div>
-                            <Image src={"/industry/lead1.jpg"} alt="Lead 1" width={300} height={300} className="w-[300px] h-[270px] object-cover object-top rounded-3xl mb-2" />
+                            <Image src={"/industry/lead1.jpg"} alt="Lead 1" width={300} height={300} className="w-[300px] h-[300px] object-cover rounded-3xl mb-4 transition-all duration-300" />
                         </div>
                         <h2 className="text-xl sm:text-2xl font-semibold">Sanket Ghosh</h2>
-                        <p className="text-center text-sm mb-2 line-clamp-3">GenAI and SaaS Application developer</p>
+                        <p className="text-center text-sm mb-2 transition-all duration-300 line-clamp-4 group-hover:line-clamp-none group-hover:overflow-y-auto group-hover:max-h-[200px]">GenAI and SaaS Application developer</p>
                         <div className='font-semibold text-blue-300'><Link target="_blank" href="https://www.linkedin.com/in/sanketghosh19/">Linkedin</Link></div>
                         <div className='font-semibold text-violet-300'><Link target="_blank" href="https://github.com/sanketghosh19">Github</Link></div>
                         <div className='font-semibold mb-1 text-slate-200'><Link target="_blank" href="https://portfolio-tawny-chi-91.vercel.app/">Portfolio</Link></div>
                     </div>
-                    <div className="bg-slate-700 hover:bg-slate-800 rounded-2xl p-2 sm:p-4 md:p-6 flex flex-col justify-center items-center gap-2 w-[348px]">
+                    <div className="group bg-slate-700 hover:bg-slate-800 rounded-2xl p-2 sm:p-4 md:p-6 flex flex-col justify-center items-center gap-2 w-[348px] transition-all duration-300">
                         <div>
-                            <Image src={"/industry/lead2.jpg"} alt="Lead 1" width={300} height={300} className="w-[300px] h-[270px] object-cover object-top rounded-3xl mb-2" />
+                            <Image src={"/industry/lead2.jpg"} alt="Lead 1" width={300} height={300} className="w-[300px] h-[300px] object-cover rounded-3xl mb-4 transition-all duration-300" />
                         </div>
                         <h2 className="text-xl sm:text-2xl font-semibold">Sujaan Bhattacharyya</h2>
-                        <p className="text-center text-sm mb-2 line-clamp-3">I'm a Python developer passionate about AI, automation, and building tools that solve real problems. I enjoy exploring new languages—both human and programming—and I'm always curious about how things work under the hood.</p>
+                        <p className="text-center text-sm mb-2 transition-all duration-300 line-clamp-4 group-hover:line-clamp-none group-hover:overflow-y-auto group-hover:max-h-[200px]">I'm a Python developer passionate about AI, automation, and building tools that solve real problems. I enjoy exploring new languages—both human and programming—and I'm always curious about how things work under the hood.</p>
                         <div className='font-semibold text-blue-300'><Link target="_blank" href="https://www.linkedin.com/in/sujaan-bhattacharyya-92a679257/">Linkedin</Link></div>
                         <div className='font-semibold mb-1 text-violet-300'><Link target="_blank" href="https://github.com/Sujaanb">Github</Link></div>
                     </div>
@@ -105,17 +105,17 @@ const page = () => {
                     {students.map((student) => (
                         <div
                             key={student.id}
-                            className="flex flex-col justify-start items-center p-2 py-4 bg-slate-700 hover:bg-slate-800 rounded-2xl w-[340px] h-[500px] min-h-[500px] max-h-[500px]"
+                            className="flex flex-col justify-start items-center p-2 py-4 bg-slate-700 hover:bg-slate-800 rounded-2xl w-[340px] h-[500px] min-h-[500px] max-h-[500px] group transition-all duration-300"
                         >
                             <Image
                                 src={student.image}
                                 alt={student.name}
                                 width={300}
                                 height={200}
-                                className="w-[300px] h-[290px] object-cover object-top rounded-3xl mb-4"
+                                className="w-[300px] h-[290px] object-cover object-top rounded-3xl mb-4 transition-all duration-300"
                             />
                             <h2 className="text-xl md:text-2xl font-semibold text-center">{student.name}</h2>
-                            <p className="text-center text-sm mb-2 line-clamp-3">{student.bio}</p>
+                            <p className="text-center text-sm mb-2 transition-all duration-300 line-clamp-4 group-hover:line-clamp-none group-hover:overflow-y-auto group-hover:max-h-[200px]">{student.bio}</p>
                             <div className='font-semibold mb-2 text-blue-300'>
                                 <Link target="_blank" href={student.linkedin}>Linkedin</Link>
                             </div>

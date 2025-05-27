@@ -33,9 +33,9 @@ export default async function ContentDetails({ params }) {
 
     return (
         <div className="container mx-auto py-24 px-16 flex justify-center items-center">
-            <div className="bg-slate-700 w-[70vw] rounded-2xl px-16 py-12 flex flex-col gap-3">
+            <div className="bg-slate-200 w-[70vw] rounded-2xl px-16 py-12 flex flex-col gap-3">
                 <div className="flex flex-col gap-3 justify-center items-center">
-                    <h1 className="text-4xl font-bold mb-4 ">{content.title}</h1>
+                    <h1 className="text-4xl text-black font-bold mb-4 ">{content.title}</h1>
                     <Image
                         className="mb-3"
                         src={content.image}
@@ -44,8 +44,8 @@ export default async function ContentDetails({ params }) {
                         height={450}
                     />
                 </div>
-                <p className="text-justify">{content.content}</p>
-                <p className="text-gray-400 text-sm mt-4">
+                <p className="text-justify text-black">{content.content}</p>
+                <p className="text-black text-sm mt-4">
                     Posted on: {new Date(content.createdAt).toLocaleDateString("en-GB")}
                 </p>
             </div>
