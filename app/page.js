@@ -310,6 +310,7 @@ export default function Home() {
 
       <section className="border-b border-neutral-900 py-3 px-4 sm:px-8 md:px-12 lg:px-24">
         <h2 className="mt-8 md:mt-12 mb-4 text-center text-3xl md:text-4xl text-white">Contact us</h2>
+        <div className="mt-2 mb-3 text-center text-xl md:text-2xl text-white">For any further query <Link href={"/contactUs"}><span className="text-blue-600 cursor-pointer">Click here</span></Link></div>
         <p id="contact" className="text-white text-center text-sm sm:text-base">
           Get in touch with us through{" "}
           <Link
@@ -340,6 +341,7 @@ export default function Home() {
             Whatsapp Channel
           </Link>
         </p>
+        <div className="text-center">Email id: <span className="underline text-blue-500 hover:cursor-pointer">genai.coe.iem@gmail.com</span></div>
       </section>
     </main>
   )

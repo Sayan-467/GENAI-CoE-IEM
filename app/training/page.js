@@ -31,7 +31,7 @@ const page = () => {
                         <div>
                             <Image src={"/training/sa.jpg"} alt="Lead 2" width={300} height={300} className="w-[300px] h-[300px] object-cover rounded-3xl mb-2" />
                         </div>
-                        <h2 className="text-xl sm:text-2xl font-semibold">Dr. Suvo Acharjee</h2>
+                        <h2 className="text-xl sm:text-2xl font-semibold">Dr. Suvojit Acharjee</h2>
                         <div className="px-2 flex flex-col justify-center items-start text-center gap-2">
                             <div className="text-md sm:text-base">
                                 <b>Associate Professor, Dept. of CSE & CSE(AI), IEM Kolkata</b>
