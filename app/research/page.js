@@ -56,7 +56,7 @@ const page = () => {
                         <div>
                             <Image src={"/research/lead2.jpeg"} alt="Lead 1" width={300} height={300} className="w-[300px] h-[270px] object-cover object-top rounded-3xl mb-2 transition-all duration-300" />
                         </div>
-                        <h2 className="text-xl sm:text-2xl font-semibold">Rajashik Dutta</h2>
+                        <h2 className="text-xl sm:text-2xl font-semibold">Rajashik Datta</h2>
                         <p className="text-center text-sm mb-2 transition-all duration-300 line-clamp-4 group-hover:line-clamp-none group-hover:overflow-y-auto group-hover:max-h-[200px]">Student Research Lead of the GenAI CoE, currently a Senior CSE(AI) student.  Proficiency: AI/ML/GenAI. Research & interests: Financial forecasting, fuzzy feature selection, cryptocurrency price prediction</p>
                         <div className='font-semibold mb-2 text-blue-300'><Link target="_blank" href="https://www.linkedin.com/in/rajashikdatta/">Linkedin</Link></div>
                     </div>

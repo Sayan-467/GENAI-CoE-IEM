@@ -14,9 +14,8 @@ export async function GET() {
             .toArray();
 
         return NextResponse.json(discussions);
-    }
-    catch (error) {
-        return NextResponse.json({ success: false, error: true, message: "Error fetching discussions", error: error }, { status: 500 })
+    } catch (error) {
+        return NextResponse.json({ success: false, message: "Error fetching discussions", error: error.message }, { status: 500 });
     }
 }
 
@@ -26,34 +25,39 @@ export async function POST(req) {
     const collection = db.collection("discussion");
 
     const body = await req.json();
-    body.createdAt = new Date();
-    body.replies = []
+    if (!body.comment) return NextResponse.json({ success: false, message: "Comment is required." }, { status: 400 });
+
+    const doc = {
+        comment: body.comment,
+        createdAt: new Date(),
+        replies: []
+    };
 
     try {
-        const result = await collection.insertOne(body);
-
-        return NextResponse.json({ success: true, error: false, message: "Discussion added successfully", result: result })
+        const result = await collection.insertOne(doc);
+        return NextResponse.json({ success: true, message: "Discussion added successfully", result });
     } catch (error) {
-        return NextResponse.json({ success: false, error: true, message: "Error adding discussion", error: error }, { status: 500 })
+        return NextResponse.json({ success: false, message: "Error adding discussion", error: error.message }, { status: 500 });
     }
 }
 
 export async function PUT(req) {
-    const client = await clientPromise
-    const db = client.db("genai-coe")
-    const collection = db.collection("discussion")
+    const client = await clientPromise;
+    const db = client.db("genai-coe");
+    const collection = db.collection("discussion");
 
-    const { quesId, reply } = await req.json()
-    reply.createdAt = new Date()
+    const { quesId, reply } = await req.json();
+    if (!quesId || !reply?.text) return NextResponse.json({ success: false, message: "Invalid reply data." }, { status: 400 });
+
+    reply.createdAt = new Date();
 
     try {
         const result = await collection.updateOne(
-            { _id: ObjectId(quesId) },
+            { _id: new ObjectId(quesId) },
             { $push: { replies: reply } }
-        )
-        return NextResponse(result)
-    }
-    catch (error) {
-        return NextResponse.json({ success: false, error: true, message: "Error adding reply", error: error }, { status: 500 })
+        );
+        return NextResponse.json({ success: true, message: "Reply added", result });
+    } catch (error) {
+        return NextResponse.json({ success: false, message: "Error adding reply", error: error.message }, { status: 500 });
     }
 }

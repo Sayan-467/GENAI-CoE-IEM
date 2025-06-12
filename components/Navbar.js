@@ -8,6 +8,7 @@ import { FaInstagram, FaLinkedin, FaFacebook, FaWhatsappSquare, FaBars, FaTimes 
 const Navbar = () => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false)
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+    const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false)
     const pathname = usePathname()
     const showNavbar = ["/", "/login", "/content", "/events", "/discussion", "/subco", "/media", "/industry", "/research", "/content", "/advisor", "/faculty", "/training", "/conference", "/contactUs"].includes(pathname)
 
@@ -32,20 +33,28 @@ const Navbar = () => {
                                 onMouseEnter={() => setIsDropdownOpen(true)}
                                 onMouseLeave={() => setIsDropdownOpen(false)}
                             >
-                                <button className="font-semibold hover:underline">
+                                <button
+                                    className="font-semibold hover:underline"
+                                    tabIndex={0}
+                                    onFocus={() => setIsDropdownOpen(true)}
+                                    onBlur={() => setIsDropdownOpen(false)}
+                                >
                                     Subcommittees
                                 </button>
-                                <div className="absolute top-8 left-0 z-40">
-                                    {isDropdownOpen && (
-                                        <ul className="w-40 bg-slate-400 text-black rounded-lg shadow-lg">
-                                            <li className="px-4 py-2 hover:bg-gray-200"><Link href="/media">Media</Link></li>
-                                            <li className="px-4 py-2 hover:bg-gray-200"><Link href="/industry">Industry</Link></li>
-                                            <li className="px-4 py-2 hover:bg-gray-200"><Link href="/research">Research</Link></li>
-                                            <li className="px-4 py-2 hover:bg-gray-200"><Link href="/training">Training</Link></li>
-                                            <li className="px-4 py-2 hover:bg-gray-200"><Link href="/conference">Conference</Link></li>
+                                {isDropdownOpen && (
+                                    <div className="absolute top-5 left-0 z-40"
+                                         onMouseEnter={() => setIsDropdownOpen(true)}
+                                         onMouseLeave={() => setIsDropdownOpen(false)}
+                                    >
+                                        <ul className="w-32 bg-slate-400 text-black rounded-lg shadow-lg">
+                                            <Link href="/media"><li className="px-4 py-2 hover:bg-gray-200">Media</li></Link>
+                                            <Link href="/industry"><li className="px-4 py-2 hover:bg-gray-200">Industry</li></Link>
+                                            <Link href="/research"><li className="px-4 py-2 hover:bg-gray-200">Research</li></Link>
+                                            <Link href="/training"><li className="px-4 py-2 hover:bg-gray-200">Training</li></Link>
+                                            <Link href="/conference"><li className="px-4 py-2 hover:bg-gray-200">Conference</li></Link>
                                         </ul>
-                                    )}
-                                </div>
+                                    </div>
+                                )}
                             </div>
                             <Link href="/content"><li className="font-semibold hover:underline">Content</li></Link>
                             <Link href="/events"><li className="font-semibold hover:underline">Events</li></Link>
@@ -63,7 +72,10 @@ const Navbar = () => {
                         {/* Hamburger for mobile */}
                         <button
                             className="lg:hidden text-white text-2xl ml-2"
-                            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                            onClick={() => {
+                                setMobileMenuOpen(!mobileMenuOpen)
+                                setMobileDropdownOpen(false)
+                            }}
                             aria-label="Open menu"
                         >
                             {mobileMenuOpen ? <FaTimes /> : <FaBars />}
@@ -77,17 +89,18 @@ const Navbar = () => {
                             <div>
                                 <button
                                     className="w-full text-left font-semibold py-2"
-                                    onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                                    onClick={() => setMobileDropdownOpen(!mobileDropdownOpen)}
+                                    tabIndex={0}
                                 >
                                     Subcommittees
                                 </button>
-                                {isDropdownOpen && (
-                                    <ul className="ml-4 flex flex-col gap-1">
-                                        <li><Link href="/media" onClick={() => setMobileMenuOpen(false)}>Media</Link></li>
-                                        <li><Link href="/industry" onClick={() => setMobileMenuOpen(false)}>Industry</Link></li>
-                                        <li><Link href="/research" onClick={() => setMobileMenuOpen(false)}>Research</Link></li>
-                                        <li><Link href="/training" onClick={() => setMobileMenuOpen(false)}>Training</Link></li>
-                                        <li><Link href="/conference" onClick={() => setMobileMenuOpen(false)}>Conference</Link></li>
+                                {mobileDropdownOpen && (
+                                    <ul className="ml-4 flex flex-col gap-1 bg-slate-600 rounded-lg py-2">
+                                        <li><Link href="/media" onClick={() => { setMobileMenuOpen(false); setMobileDropdownOpen(false); }}>Media</Link></li>
+                                        <li><Link href="/industry" onClick={() => { setMobileMenuOpen(false); setMobileDropdownOpen(false); }}>Industry</Link></li>
+                                        <li><Link href="/research" onClick={() => { setMobileMenuOpen(false); setMobileDropdownOpen(false); }}>Research</Link></li>
+                                        <li><Link href="/training" onClick={() => { setMobileMenuOpen(false); setMobileDropdownOpen(false); }}>Training</Link></li>
+                                        <li><Link href="/conference" onClick={() => { setMobileMenuOpen(false); setMobileDropdownOpen(false); }}>Conference</Link></li>
                                     </ul>
                                 )}
                             </div>

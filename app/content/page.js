@@ -4,6 +4,10 @@ import Link from "next/link";
 export default async function Content() {
   // Fetching data from the API route
   const apiUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/api/content`;
+  // const client = await clientPromise;
+  // const db = client.db("genai-coe");
+  // const contents = await db.collection("content").find({}).sort({ createdAt: -1 }).toArray();
+
   let res;
   try {
     res = await fetch(apiUrl, {
