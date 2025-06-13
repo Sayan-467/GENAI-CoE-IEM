@@ -1,29 +1,39 @@
 // /app/content/page.js
 import Link from "next/link";
+import clientPromise from "@/lib/mongodb";
 
 export default async function Content() {
   // Fetching data from the API route
-  const apiUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/api/content`;
-  // const client = await clientPromise;
-  // const db = client.db("genai-coe");
-  // const contents = await db.collection("content").find({}).sort({ createdAt: -1 }).toArray();
+  // const apiUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/api/content`;
+  const client = await clientPromise;
+  const db = client.db("genai-coe");
+  const collection = db.collection("content")
+  const contents = await collection.find({}).sort({ createdAt: -1 }).toArray();
 
-  let res;
-  try {
-    res = await fetch(apiUrl, {
-      cache: "no-store",
-    });
-  } catch (err) {
-    console.error("Fetch error:", err, apiUrl);
-    return <div>Error loading contents...</div>;
-  }
+  // Convert _id to string for serialization if needed
+  const serializedContents = contents.map((content) => ({
+    ...content,
+    _id: content._id?.toString?.() ?? content._id,
+    organisedOn: content.organisedOn ? new Date(content.organisedOn).toISOString() : null,
+    createdAt: content.createdAt ? new Date(content.createdAt).toISOString() : null,
+  }))
 
-  if (!res || !res.ok) {
-    console.error("API response error:", res && res.status, apiUrl);
-    return <div>Error loading contents...</div>;
-  }
+  // let res;
+  // try {
+  //   res = await fetch(apiUrl, {
+  //     cache: "no-store",
+  //   });
+  // } catch (err) {
+  //   console.error("Fetch error:", err, apiUrl);
+  //   return <div>Error loading contents...</div>;
+  // }
 
-  const contents = await res.json();
+  // if (!res || !res.ok) {
+  //   console.error("API response error:", res && res.status, apiUrl);
+  //   return <div>Error loading contents...</div>;
+  // }
+
+  // const contents = await res.json();
 
   return (
     <div className="pt-20 sm:pt-28 md:pt-36 lg:pt-44 pb-8 md:pb-14 px-4 sm:px-8 md:px-16 lg:px-24 container mx-auto">
@@ -34,7 +44,7 @@ export default async function Content() {
         </span>
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
-        {contents.map((content) => (
+        {serializedContents.map((content) => (
           <div
             key={content._id}
             className="bg-slate-700 rounded-2xl p-4 sm:p-6 md:p-8 flex flex-col gap-2"
